@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    <title>flexbox</title>
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            align-items: center;
+            background-color: green;
+            color: white;
+            height: 50px;
+            width: 100%;
+            top: 0%;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0px;
+        }
+        .nav-item {
+            margin-right: 20px;
+        }
+        .dn {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            padding: 50px;
+            background-color: grey;
+        }
+        .dn-list {
+            color: black;
+            list-style-type: none;
+            margin: right;
+            flex: 1;
+        }
+        .meomeo{
+            display: flex;
+            
+        }
+        .hinhanh {
+            background-color: bisque;
+        }
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #eee;
+  padding: 20px;
+}
+.feature {
+  background: #ddd;
+  padding: 10px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.page {
+  background: orangered;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.multi-columns {
+  display: flex;
+  margin: 20px;
+}
+.col {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+.pink { background: pink; }
+.blue { background: lightblue; }
+.purple { background: plum; }
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  margin: 20px;
+  background: white;
+}
+.bar {
+  background: orangered;
+  width: 40px;
+  color: white;
+  text-align: center;
+}
+.center-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+}
+.center-box {
+  background: lightgreen;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+    </style>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">Giới thiệu</li> 
+                <li class="nav-item">Kết nối</li>
+                <li class="nav-item">Tải ứng dụng</li>
+            </ul>
+            <ul class="nav-list">
+                <li class="nav-item">Đăng kí</li>
+                <li class="nav-item">Đăng nhập</li>
+            </ul>
+        </div>
+
+        <div class="dn">
+            <ul class="dn-list">
+                <li>
+                    <label>Ten dang nhap </label> <br>
+                    <input type="text" placeholder="nhap ten">
+                 </li>
+                <li>
+                    <label>Mat khau </label> <br>
+                    <input type="text" placeholder="nhap mat khau">
+                 </li>
+            </ul>
+        </div>
+
+        <div class="meomeo">
+            <div class="hinhanh">
+                <img width="150px" src="https://cdn-media.sforum.vn/storage/app/media/ctv_seo3/meme-meo-cuoi-12.jpg" alt="hình ảnh mèo"></div>
+            <div class="noidung">
+                <h2>Có nên có 1 con mèo không</h2>
+                <p>Bạn có thể chọn một con mèo bạn yêu thích, có thể là mèo nhà mình hoặc mèo của bạn bè, người thân. Hãy miêu tả chi tiết về bộ lông, màu sắc, đôi mắt, tai, mũi, đuôi, dáng vẻ, và các hành động của chú mèo. Ví dụ, bạn có thể tả một chú mèo có bộ lông vàng óng, đôi mắt xanh biếc, tai vểnh lên lắng nghe, và thích vờn đuổi theo những sợi chỉ.</p>
+            </div>
+            <div class="loaimeo">
+                <h2>Mèo tai cụt Scotland</h2><br>
+            Đặc điểm nổi bật của mèo tai cụp Scotland là đôi tai nhỏ, cụp xuống, khiến chúng trông hơi giống cú. Nhưng đôi tai đáng yêu không phải là đặc điểm nổi bật duy nhất của loài mèo dễ thương này. Những chú mèo này có tính cách rất thân thiện, ngọt ngào và rất hòa đồng, tình cảm với gia đình, bao gồm cả trẻ em và các vật nuôi khác trong nhà.            </div>
+        </div>
+
+        <!-- Features -->
+  <div class="features">
+    <div class="feature">Feature 1</div>
+    <div class="feature">Feature 2</div>
+    <div class="feature">Feature 3</div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <div class="page">1</div>
+    <div class="page">2</div>
+    <div class="page">3</div>
+    <div class="page">4</div>
+    <div class="page">5</div>
+  </div>
+
+  <!-- Multi-column content -->
+  <div class="multi-columns">
+    <div class="col pink">ndajksncjkasndiasdia</div>
+    <div class="col blue">dnjsacnjsakbcuwkcbsajkccascs</div>
+    <div class="col purple">dmskamcoiasdjwubcsjakcnacnask</div>
+  </div>
+
+  <div class="chart">
+    <div class="bar" style="height: 10%;">10%</div>
+    <div class="bar" style="height: 20%;">20%</div>
+    <div class="bar" style="height: 40%;">40%</div>
+    <div class="bar" style="height: 90%;">90%</div>
+    <div class="bar" style="height: 80%;">80%</div>
+    <div class="bar" style="height: 40%;">40%</div>
+    <div class="bar" style="height: 10%;">10%</div>
+    <div class="bar" style="height: 20%;">20%</div>
+    <div class="bar" style="height: 69%;">69%</div>
+    <div class="bar" style="height: 96%;">96%</div>
+    <div class="bar" style="height: 60%;">60%</div>
+    <div class="bar" style="height: 88%;">88%</div>
+  </div>
+
+  <div class="center-container">
+    <div class="center-box">Center item</div>
+  </div>
+
+    </body> 
+</html>
